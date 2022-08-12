@@ -6,8 +6,8 @@ fn main() {
     App::new()
         .insert_resource(WindowDescriptor {
             title: "Chaos Game".to_string(),
-            width: 1024.,
-            height: 768.,
+            width: 800.,
+            height: 800.,
             present_mode: PresentMode::Immediate,
             ..default()
         })
