@@ -15,6 +15,7 @@ impl Plugin for ChaosGame {
 
 #[derive(Component)]
 struct Vertex;
+
 #[derive(Component)]
 struct Last;
 
@@ -83,7 +84,7 @@ fn play(
     let vertex = vertex_t.translation;
     let point_vec = point.1.translation;
 
-    let mut mid: Vec3 = vertex.lerp(point_vec, 0.5);
+    let mid: Vec3 = vertex.lerp(point_vec, 0.5);
 
     commands
         .spawn_bundle(MaterialMesh2dBundle {
